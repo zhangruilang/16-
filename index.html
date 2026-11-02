@@ -7,24 +7,31 @@
   <title>林知远 · 个人主页</title>
   <style>
     * { box-sizing: border-box; }
-    body { margin: 0; color: #173251; background: #f5f9ff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+    body { margin: 0; color: #ffffff; background: #101722; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+    :root { color-scheme: dark; }
     .page { max-width: 1120px; margin: auto; padding: 36px 48px; min-height: 100svh; display: flex; flex-direction: column; }
     header { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
     .logo { font-size: 18px; font-weight: 700; letter-spacing: 1px; }
-    .logo span { color: #2674e8; }
-    .label { color: #718399; font-size: 12px; letter-spacing: 2px; }
+    .logo span { color: #ffffff; }
+    .label { color: #ffffff; font-size: 12px; letter-spacing: 2px; }
     main { flex: 1; display: flex; align-items: center; padding: 75px 0; }
-    .card { width: 100%; position: relative; overflow: hidden; padding: 80px 64px; background: white; border: 1px solid #e4edf9; border-radius: 28px; box-shadow: 0 24px 70px #205aa00a; }
-    .card::after { content: ""; position: absolute; width: 280px; height: 280px; border: 55px solid #edf5ff; border-radius: 50%; right: -90px; top: -100px; pointer-events: none; }
+    .card { width: 100%; position: relative; overflow: hidden; padding: 80px 64px; background: #1b2636; border: 1px solid #354459; border-radius: 28px; box-shadow: 0 24px 70px #00000030; }
+    .card::after { content: ""; position: absolute; width: 280px; height: 280px; border: 55px solid #25344a; border-radius: 50%; right: -90px; top: -100px; pointer-events: none; }
     .content { position: relative; z-index: 1; }
-    .avatar { display: grid; place-items: center; width: 64px; height: 64px; background: #eaf3ff; color: #2674e8; border-radius: 20px; font-size: 26px; margin-bottom: 36px; }
-    .eyebrow { color: #2674e8; font-size: 12px; font-weight: 600; letter-spacing: 3px; margin: 0 0 18px; }
+    .avatar { display: grid; place-items: center; width: 64px; height: 64px; background: #30445f; color: #ffffff; border-radius: 20px; font-size: 26px; margin-bottom: 36px; }
+    .eyebrow { color: #ffffff; font-size: 12px; font-weight: 600; letter-spacing: 3px; margin: 0 0 18px; }
     h1 { font-size: clamp(36px, 6vw, 62px); line-height: 1.25; letter-spacing: -2px; margin: 0 0 24px; font-weight: 700; }
-    h1 span { color: #2674e8; }
-    .intro { max-width: 560px; color: #697d94; font-size: 17px; line-height: 1.9; margin: 0; }
-    .divider { width: 42px; height: 3px; background: #2674e8; border-radius: 4px; margin: 35px 0 24px; }
-    .note { font-size: 13px; color: #8a9bb0; margin: 0; letter-spacing: 1px; }
-    footer { display: flex; justify-content: space-between; gap: 16px; color: #8a9bb0; font-size: 12px; line-height: 1.7; }
+    h1 span { color: #ffffff; }
+    .intro { max-width: 560px; color: #ffffff; font-size: 17px; line-height: 1.9; margin: 0; }
+    .resume { margin-top: 40px; padding-top: 30px; border-top: 1px solid #354459; }
+    .resume h2 { margin: 0 0 8px; font-size: 24px; }
+    .resume .caption { margin: 0 0 24px; font-size: 13px; line-height: 1.7; }
+    .resume h3 { font-size: 16px; margin: 22px 0 8px; }
+    .resume p, .resume ul { font-size: 15px; line-height: 1.9; margin-top: 0; }
+    .resume ul { padding-left: 22px; margin-bottom: 0; }
+    .divider { width: 42px; height: 3px; background: #ffffff; border-radius: 4px; margin: 35px 0 24px; }
+    .note { font-size: 13px; color: #ffffff; margin: 0; letter-spacing: 1px; }
+    footer { display: flex; justify-content: space-between; gap: 16px; color: #ffffff; font-size: 12px; line-height: 1.7; }
     @media (max-width: 600px) { .page { padding: 24px; } .label { font-size: 10px; letter-spacing: 1px; } main { padding: 48px 0; } .card { padding: 48px 28px; border-radius: 22px; } h1 { letter-spacing: -1px; } .intro { font-size: 16px; } footer { flex-direction: column; gap: 4px; } }
   </style>
 </head>
@@ -38,6 +45,25 @@
           <p class="eyebrow">欢迎来到我的个人主页</p>
           <h1 id="greeting">你好，我是<span>林知远</span>。</h1>
           <p class="intro">一个热爱文字与生活的创作者，用好奇心探索世界，用简单的表达记录每一份灵感。</p>
+          <section class="resume" aria-labelledby="resume-title">
+            <h2 id="resume-title">我的个人简历</h2>
+            <p class="caption">以下为示例简历，展示我的创作方向与成长经历。</p>
+            <h3>个人概况</h3>
+            <p>林知远 · 内容创作者<br>专注生活方式与人文故事，擅长把日常观察写成有温度的内容。</p>
+            <h3>教育背景</h3>
+            <p>2018—2022 · 汉语言文学专业 · 本科<br>系统学习文学写作、传播基础与文本分析。</p>
+            <h3>工作经历</h3>
+            <ul>
+              <li>2022—2024 · 新媒体编辑：负责选题策划、文章撰写与日常内容运营。</li>
+              <li>2024—至今 · 独立内容创作者：持续记录城市生活，创作人物故事与旅行随笔。</li>
+            </ul>
+            <h3>专业技能</h3>
+            <ul>
+              <li>内容策划与写作：选题研究、人物采访、文章编辑。</li>
+              <li>视觉表达：日常摄影、基础图片处理与短视频剪辑。</li>
+              <li>项目协作：内容排期、资料整理与跨团队沟通。</li>
+            </ul>
+          </section>
           <div class="divider" aria-hidden="true"></div>
           <p class="note">保持好奇，慢慢生长。</p>
         </div>
